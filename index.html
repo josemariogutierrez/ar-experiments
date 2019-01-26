@@ -12,7 +12,7 @@
 
 <body style='margin : 0px; overflow: hidden;'>
     <h1>AR Test</h1>
-    <a-scene embedded arjs>
+    <a-scene embedded arjs='sourceType: webcam;''>
         <a-marker preset="hiro">
 
             <a-entity obj-model="
@@ -20,6 +20,11 @@
             mtl: url(/3d-models/chocolate-cake.obj
             ">
             </a-entity>
+        </a-marker>
+        <a-marker preset="kanji">
+            <a-box position='
+        0 0.5 0' material='opacity: 0.5;'>
+        </a-box>
         </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
